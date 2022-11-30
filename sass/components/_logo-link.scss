@@ -1,0 +1,26 @@
+.logo-link {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--blue);
+    margin-right: 93px;
+}
+
+.logo-link-header {
+    padding: 24px 0;
+}
+
+.logo-dark {
+    color: var(--text-color-dark);
+}
+
+.logo-light {
+    color: var(--color-white);
+}
+
+.footer .logo-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}

@@ -1,0 +1,20 @@
+.contact-modal-btn {
+    padding: 10px 55px;
+    align-self: center;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--color-white);
+    background-color: var(--blue);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-modal-btn:hover,
+.contact-modal-btn:focus {
+    background-color: var(--blue-h-f);
+}

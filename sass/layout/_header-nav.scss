@@ -1,0 +1,43 @@
+.header-nav-link.current {
+    color: var(--blue);
+}
+
+.current::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 4px solid var(--blue);
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-item {
+    position: relative;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-color-dark);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
