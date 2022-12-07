@@ -7,10 +7,6 @@
     margin-left: 10px;
 }
 
-.footer-subscribe-input::placeholder {
-    padding-top: 5px;
-}
-
 .footer-subscribe-input {
     width: 358px;
     height: 50px;
@@ -26,11 +22,15 @@
     color: var(--color-white);
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-subscribe-input:focus {
-    outline: none;
-    border-color: var(--blue);
+    &::placeholder {
+        padding-top: 5px;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--blue);
+    }
 }
 
 .footer-subscribe-box {

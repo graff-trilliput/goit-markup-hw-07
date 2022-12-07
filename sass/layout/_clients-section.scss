@@ -26,12 +26,17 @@
     padding-right: 32px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.loyal-clients-link:hover,
-.loyal-clients-link:focus {
-    border: 1px solid var(--blue);
-    fill: var(--blue);
+        &:hover,
+        &:focus {
+            border: 1px solid var(--blue);
+            fill: var(--blue);
+        }
+
+        &:hover .clients-icon,
+        &:focus .clients-icon {
+            fill: var(--blue);
+}
 }
 
 .clients-icon {
@@ -39,9 +44,4 @@
     margin-bottom: 15px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.loyal-clients-link:hover .clients-icon,
-.loyal-clients-link:focus .clients-icon {
-    fill: var(--blue);
 }
