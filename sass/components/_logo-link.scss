@@ -5,22 +5,23 @@
     line-height: 1.2;
     color: var(--blue);
     margin-right: 93px;
+
+    .footer & {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 
-.logo-link-header {
+.logo-link_header {
     padding: 24px 0;
 }
 
-.logo-dark {
+.logo_dark {
     color: var(--text-color-dark);
 }
 
-.logo-light {
+.logo_light {
     color: var(--color-white);
 }
 
-.footer .logo-link {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 0;
-}

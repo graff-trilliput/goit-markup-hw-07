@@ -1,47 +1,47 @@
 .loyal-clients-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.loyal-clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+.loyal-clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
 
-.loyal-clients-item {
-    display: flex;
+.loyal-clients-list__item {
+  display: flex;
 
-    flex-basis: calc((100% - 180px) / 6);
-    margin-left: 30px;
+  flex-basis: calc((100% - 180px) / 6);
+  margin-left: 30px;
 }
 
-.loyal-clients-link {
-    display: flex;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    fill: var(--icon-color);
+.loyal-clients-list__link {
+  display: flex;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
 
-    padding-left: 32px;
-    padding-right: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-            border: 1px solid var(--blue);
-            fill: var(--blue);
-        }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blue);
+    fill: var(--blue);
+  }
 
-        &:hover .clients-icon,
-        &:focus .clients-icon {
-            fill: var(--blue);
+  &:hover .loyal-clients-list__icon,
+  &:focus .loyal-clients-list__icon {
+    fill: var(--blue);
+  }
 }
-}
 
-.clients-icon {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.loyal-clients-list__icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

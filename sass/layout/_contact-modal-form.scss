@@ -1,128 +1,125 @@
 .contact-modal-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-modal-form-text {
-    display: block;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    text-align: center;
-    letter-spacing: 0.03em;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .contact-modal-form-field {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-modal-form-input {
-    width: 100%;
-    height: 40px;
-    padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus {
-            outline: none;
-            border-color: var(--blue);
-        }
+  &:focus {
+    outline: none;
+    border-color: var(--blue);
+  }
 }
 
-
-
 .contact-modal-form-input-wrapper {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 .contact-modal-form-field-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.contact-modal-form-input:focus+.contact-modal-form-field-icon {
+  .contact-modal-form-input:focus + & {
     fill: var(--blue);
+  }
 }
 
 .contact-modal-form-field-key {
-    display: block;
-    margin-bottom: 4px;
+  display: block;
+  margin-bottom: 4px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
 }
 
 .contact-modal-form-message {
-    display: block;
-    width: 100%;
-    height: 120px;
-    padding: 12px 16px;
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    resize: none;
-    outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+  outline: none;
 
-    &::placeholder {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: calc (14 / 12);
-    
-        color: rgba(117, 117, 117, 0.5);
-    }
-    
-    &:focus {
-        border-color: var(--blue);
-    }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc (14 / 12);
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border-color: var(--blue);
+  }
 }
 
 .contact-modal-form-checkbox-label {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: center;
+  @extend %align;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 
-    color: var(--text-color-gray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
 
-    &::before {
-        content: '';
-        display: block;
-        width: 16px;
-        height: 16px;
+  color: var(--text-color-gray);
 
-        margin-right: 7px;
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
 
-        border: 2px solid var(--color-black);
-        border-radius: 2px;
+    margin-right: 7px;
 
-        cursor: pointer;
+    border: 2px solid var(--color-black);
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    .contact-modal-form-checkbox:checked + & {
+      background-color: var(--blue);
+      border-color: var(--blue);
+      background-image: url('../images/tick.svg');
+      background-size: cover;
+
+      padding: auto;
     }
-}
-
-.contact-modal-form-checkbox:checked+.contact-modal-form-checkbox-label::before {
-    background-color: var(--blue);
-    border-color: var(--blue);
-    background-image: url('../images/tick.svg');
-    background-size: cover;
-
-    padding: auto;
+  }
 }
